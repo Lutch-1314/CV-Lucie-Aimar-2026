@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-Regular.woff');
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype'),
+    url('../fonts/Raleway-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 700;
+    src: url('../fonts/Raleway-Bold.woff');
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype'),
+    url('../fonts/Raleway-Bold.otf') format('opentype'); 
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-style: italic;
+    src: url('../fonts/Raleway-Italic.woff');
+    src: url('../fonts/Raleway-Italic.ttf') format('truetype'),
+    url('../fonts/Raleway-Italic.otf') format('opentype');
+}
+
+#portrait {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    border-radius: 80px;
+}
+
+#portrait:hover {
+    cursor: zoom-in;
+}
+
+div > img {
+    padding-right: 10px;
+}
+
+body {
+    font-family: "Raleway", sans-serif; 
+    font-size: 1em;
+}
+
+.flex-a {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1160px;
+    margin: auto;
+}
+
+header {
+    background-color: #17abb3;
+    color: #ffffff;
+    flex-basis: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img:not(#portrait) {
+    width: 20px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+address {
+    font-style: normal;
+}
+
+.flex-a12 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.flex-a121 {
+    width: 49%;
+    padding-bottom: 10px;
+}
+
+.flex-a122 {
+    width: 51%;
+}
+
+.flex-a123 {
+    width: 50%;
+}
+
+.flex-a124 {
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: "Lato";
+    width: 100%;
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Lato";
+    color: #17abb3;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+header h2 {
+    color: #ffffff;
+    border-bottom: none;
+    margin: 0;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+
+.flex-a2 {
+    background-color: #f5f5f5;
+    flex-basis: 25%;
+    padding: 3%;
+}
+
+.flex-a3 {
+    flex-basis: 63%;
+    padding: 3%;
+}
+
+.flex-a4 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-a42 {
+    width: 100%;
+}
+
+aside > div > div {
+    margin-bottom: 10px;
+}
+
+.flex-b {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rating {
+    color: #17abb3;
+}
+
+section > div > div .bold {
+    font-size: 1em;
+}
+
+.bold {
+    font-weight: bold;
+    font-family: "Lato";
+    width: 50%;
+}
+
+.flex-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+ul>li::before {
+    content: "\0025A0";
+    color: #17abb3;
+    padding-right: 10px;
+}
+
+li {
+    list-style: none;
+    padding-bottom: 4px;
+}
+
+p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+time:not(footer>span>time) {
+    color: #17abb3;
+    width: 50%;
+    text-align: right;
+}
+
+.place {
+    font-style: italic;
+    font-size: 0.8em;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.effect-1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.effect-1:hover {
+    background-color: #e3e3e3;
+    border-left: 4px solid #17abb3;
+    padding: 7px 10px 0 10px ;
+}
+
+footer {
+    background-color: #17abb3;
+    color: #ffffff;
+    font-size: 0.6em;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+footer>img {
+    padding: 10px
+}
+
+footer>img:hover {
+    opacity: 0.7;
+}
