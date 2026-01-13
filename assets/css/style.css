@@ -1,69 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
-
-@font-face {
-    font-family: "Raleway";
-    src: url('../fonts/Raleway-Regular.woff');
-    src: url('../fonts/Raleway-Regular.ttf') format('truetype'),
-    url('../fonts/Raleway-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: "Raleway";
-    font-weight: 700;
-    src: url('../fonts/Raleway-Bold.woff');
-    src: url('../fonts/Raleway-Bold.ttf') format('truetype'),
-    url('../fonts/Raleway-Bold.otf') format('opentype'); 
-}
-
-@font-face {
-    font-family: "Raleway";
-    font-style: italic;
-    src: url('../fonts/Raleway-Italic.woff');
-    src: url('../fonts/Raleway-Italic.ttf') format('truetype'),
-    url('../fonts/Raleway-Italic.otf') format('opentype');
-}
-
-#portrait {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border: 4px solid #ffffff;
-    border-radius: 80px;
-}
-
-#portrait:hover {
-    cursor: zoom-in;
-}
-
-div > img {
-    padding-right: 10px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 body {
-    font-family: "Raleway", sans-serif; 
+    font-family: "Inter", sans-serif; 
     font-size: 1em;
 }
 
-.flex-a {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1160px;
-    margin: auto;
+.profile-picture {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    border-radius: 70px;
+    
 }
 
-header {
+.profile-picture:hover {
+    cursor: zoom-in;
+}
+
+.cv-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
     background-color: #17abb3;
     color: #ffffff;
-    flex-basis: 100%;
     height: 230px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
-img:not(#portrait) {
-    width: 20px;
-    height: auto;
+.cv-header > a {
+    justify-self: center;
 }
 
 a {
@@ -71,51 +37,53 @@ a {
     color: #ffffff;
 }
 
-address {
+
+.cv-address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 0.75rem;
+    justify-items: start;
     font-style: normal;
 }
 
-.flex-a12 {
-    display: flex;
-    flex-wrap: wrap;
+.cv-address h1,
+.cv-address h2 {
+    grid-column: 1 / -1;
     text-align: center;
-    width: 500px;
-    justify-content: space-around;
+    justify-self: stretch;
 }
 
-.flex-a121 {
-    width: 49%;
-    padding-bottom: 10px;
+.cv-address img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
-.flex-a122 {
-    width: 51%;
+.cv-address a,
+.cv-address span {
+    font-style: italic;
 }
 
-.flex-a123 {
-    width: 50%;
-}
-
-.flex-a124 {
-    width: 50%;
-    padding-bottom: 10px;
+.cv-address > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 h1 {
-    font-family: "Lato";
-    width: 100%;
+    font-family: "Lora";
     font-size: 3em;
     margin: 0;
 }
 
 h2 {
-    font-family: "Lato";
+    font-family: "Lora";
     color: #17abb3;
     font-size: 1.5em;
-    font-weight: bold;
     padding-top: 5px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 2px solid #f1e0e0b6;
 }
 
 header h2 {
@@ -127,72 +95,74 @@ header h2 {
     padding-bottom: 15px;
 }
 
-.flex-a2 {
-    background-color: #f5f5f5;
-    flex-basis: 25%;
-    padding: 3%;
+.cv {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header header"
+    "aside  main"
+    "footer footer";
 }
 
-.flex-a3 {
-    flex-basis: 63%;
-    padding: 3%;
+.cv-header {
+  grid-area: header;
 }
 
-.flex-a4 {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.cv-sidebar {
+  grid-area: aside;
+  background-color: rgba(255, 245, 238, 0.979);
 }
 
-.flex-a42 {
-    width: 100%;
+.cv-main {
+  grid-area: main;
 }
 
-aside > div > div {
-    margin-bottom: 10px;
+.cv-footer {
+  grid-area: footer;
 }
 
-.flex-b {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.cv-header,
+.cv-sidebar,
+.cv-main,
+.cv-footer {
+  padding: 1.5rem;
 }
 
-.rating {
+.skill-level {
     color: #17abb3;
 }
 
-section > div > div .bold {
-    font-size: 1em;
+.skill-item,
+.language-item {
+  display: flex;
+  justify-content: space-between;
 }
 
-.bold {
-    font-weight: bold;
-    font-family: "Lato";
-    width: 50%;
-}
-
-.flex-c {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.skill-name,
+.language-name {
+    font-weight: 600;
 }
 
 ul {
     padding-left: 0px;
 }
 
-ul>li::before {
-    content: "\0025A0";
-    color: #17abb3;
-    padding-right: 10px;
-}
-
 li {
     list-style: none;
-    padding-bottom: 4px;
+}
+
+ul li {
+    display: flex;
+    align-items: flex-start;
+}
+
+ul li::before {
+    content: "\0025A0";
+    color: #17abb3;
+    margin-right: 10px;
+    margin-top: -0.16em; /* ajuste la hauteur de la puce */
+    flex-shrink: 0;
 }
 
 p {
@@ -200,9 +170,8 @@ p {
     text-align: justify;
 }
 
-time:not(footer>span>time) {
+article > time {
     color: #17abb3;
-    width: 50%;
     text-align: right;
 }
 
@@ -213,30 +182,61 @@ time:not(footer>span>time) {
     margin-bottom: 12px;
 }
 
-.effect-1 {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: justify;
+.course-item,
+.experience-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 0.25rem;
+    padding: 7px 5px 0 7px;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
 }
 
-.effect-1:hover {
+.course-item h3,
+.experience-item h3 {
+    margin: 0;
+}
+
+.course-item .place,
+.experience-item .place {
+    grid-column: 1 / -1;
+}
+
+.course-item time,
+.experience-item time {
+    justify-self: end;
+    white-space: nowrap;
+}
+
+.course-item:hover,
+.experience-item:hover {
     background-color: #e3e3e3;
     border-left: 4px solid #17abb3;
-    padding: 7px 10px 0 10px ;
 }
 
-footer {
+.cv-footer {
     background-color: #17abb3;
     color: #ffffff;
     font-size: 0.6em;
     font-style: italic;
-    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-footer>img {
-    padding: 10px
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-footer>img:hover {
+.social-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.social-icon:hover {
     opacity: 0.7;
 }
