@@ -11,7 +11,6 @@ body {
     object-fit: cover;
     border: 3px solid #ffffff;
     border-radius: 70px;
-    
 }
 
 .profile-picture:hover {
@@ -37,6 +36,10 @@ a {
     color: #ffffff;
 }
 
+a:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
 
 .cv-address {
     display: grid;
@@ -83,10 +86,10 @@ h2 {
     font-size: 1.5em;
     padding-top: 5px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #f1e0e0b6;
+    border-bottom: 2px solid #ccc6c2;
 }
 
-header h2 {
+.cv-header h2 {
     color: #ffffff;
     border-bottom: none;
     margin: 0;
@@ -111,7 +114,7 @@ header h2 {
 
 .cv-sidebar {
   grid-area: aside;
-  background-color: rgba(255, 245, 238, 0.979);
+  background-color: #ebe1da;
 }
 
 .cv-main {
@@ -161,7 +164,7 @@ ul li::before {
     content: "\0025A0";
     color: #17abb3;
     margin-right: 10px;
-    margin-top: -0.16em; /* ajuste la hauteur de la puce */
+    margin-top: -0.16em;
     flex-shrink: 0;
 }
 
@@ -210,7 +213,7 @@ article > time {
 
 .course-item:hover,
 .experience-item:hover {
-    background-color: #e3e3e3;
+    background-color: #ebe1da;
     border-left: 4px solid #17abb3;
 }
 
@@ -239,4 +242,99 @@ article > time {
 
 .social-icon:hover {
     opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+
+  .cv {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+  }
+
+  .cv-header {
+    grid-template-columns: 1fr;
+    height: auto;
+    text-align: center;
+    row-gap: 1rem;
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  .cv-address {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .cv-address > div {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .cv-header,
+  .cv-sidebar,
+  .cv-main,
+  .cv-footer {
+    padding: 1rem;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .cv {
+    grid-template-columns: 1.2fr 2fr;
+  }
+
+  .cv-header {
+    grid-template-columns: 180px 1fr;
+    height: auto;
+    row-gap: 1rem;
+  }
+
+  .profile-picture {
+    width: 140px;
+    height: 140px;
+  }
+
+  .cv-address {
+    column-gap: 1.5rem;
+    row-gap: 0.6rem;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .cv-sidebar {
+    padding: 1.25rem;
+  }
+
+  .cv-main {
+    padding: 1.25rem;
+  }
+
+  .cv-footer {
+    font-size: 0.7em;
+  }
 }
