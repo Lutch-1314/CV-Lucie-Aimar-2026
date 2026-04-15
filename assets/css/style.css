@@ -1,39 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 body {
-    font-family: "Inter", sans-serif; 
-    font-size: 1em;
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
 }
 
 .profile-picture {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border: 3px solid #ffffff;
-    border-radius: 70px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  border-radius: 70px;
 }
 
 .profile-picture:hover {
-    cursor: zoom-in;
+  cursor: zoom-in;
 }
 
 .cv-header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    justify-items: center;
-    background-color: #17abb3;
-    color: #ffffff;
-    height: 230px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+  background-color: #17abb3;
+  color: #ffffff;
+  height: 230px;
 }
 
 .cv-header > a {
-    justify-self: center;
+  justify-self: center;
 }
 
 a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 a:focus-visible {
@@ -42,60 +42,60 @@ a:focus-visible {
 }
 
 .cv-address {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-    row-gap: 0.75rem;
-    justify-items: start;
-    font-style: normal;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 0.75rem;
+  justify-items: start;
+  font-style: normal;
 }
 
 .cv-address h1,
 .cv-address h2 {
-    grid-column: 1 / -1;
-    text-align: center;
-    justify-self: stretch;
+  grid-column: 1 / -1;
+  text-align: center;
+  justify-self: stretch;
 }
 
 .cv-address img {
-    width: 18px;
-    height: 18px;
-    object-fit: contain;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
 
 .cv-address a,
 .cv-address span {
-    font-style: italic;
+  font-style: italic;
 }
 
 .cv-address > div {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 h1 {
-    font-family: "Lora";
-    font-size: 3em;
-    margin: 0;
+  font-family: "Lora";
+  font-size: 3em;
+  margin: 0;
 }
 
 h2 {
-    font-family: "Lora";
-    color: #17abb3;
-    font-size: 1.5em;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #ccc6c2;
+  font-family: "Lora";
+  color: #17abb3;
+  font-size: 1.5em;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc6c2;
 }
 
 .cv-header h2 {
-    color: #ffffff;
-    border-bottom: none;
-    margin: 0;
-    width: 100%;
-    padding-top: 8px;
-    padding-bottom: 15px;
+  color: #ffffff;
+  border-bottom: none;
+  margin: 0;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 15px;
 }
 
 .cv {
@@ -133,7 +133,7 @@ h2 {
 }
 
 .skill-level {
-    color: #17abb3;
+  color: #17abb3;
 }
 
 .skill-item,
@@ -144,109 +144,116 @@ h2 {
 
 .skill-name,
 .language-name {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 ul {
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 ul li {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 ul li::before {
-    content: "\0025A0";
-    color: #17abb3;
-    margin-right: 10px;
-    margin-top: -0.16em;
-    flex-shrink: 0;
+  content: "\0025A0";
+  color: #17abb3;
+  margin-right: 10px;
+  margin-top: -0.16em;
+  flex-shrink: 0;
 }
 
 p {
-    text-indent: 20px;
-    text-align: justify;
+  text-indent: 20px;
+  text-align: justify;
 }
 
 article > time {
-    color: #17abb3;
-    text-align: right;
+  color: #17abb3;
+  text-align: right;
 }
 
 .place {
-    font-style: italic;
-    font-size: 0.8em;
-    width: 100%;
-    margin-bottom: 12px;
+  font-style: italic;
+  font-size: 0.8em;
+  width: 100%;
+  margin-bottom: 12px;
 }
 
 .course-item,
 .experience-item {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    row-gap: 0.25rem;
-    padding: 7px 5px 0 7px;
-    border-left: 4px solid transparent;
-    box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 0.25rem;
+  padding: 7px 5px 0 7px;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
 }
 
 .course-item h3,
 .experience-item h3 {
-    margin: 0;
+  margin: 0;
 }
 
 .course-item .place,
 .experience-item .place {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .course-item time,
 .experience-item time {
-    justify-self: end;
-    white-space: nowrap;
+  justify-self: end;
+  white-space: nowrap;
 }
 
 .course-item:hover,
 .experience-item:hover {
-    background-color: #ebe1da;
-    border-left: 4px solid #17abb3;
+  background-color: #ebe1da;
+  border-left: 4px solid #17abb3;
+}
+
+.skills,
+.languages,
+.qualities-list,
+.interests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .cv-footer {
-    background-color: #17abb3;
-    color: #ffffff;
-    font-size: 0.6em;
-    font-style: italic;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+  background-color: #17abb3;
+  color: #ffffff;
+  font-size: 0.6em;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .social-icon {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .social-icon:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
-
 @media (max-width: 768px) {
-
   .cv {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -295,9 +302,7 @@ article > time {
   }
 }
 
-
 @media (min-width: 769px) and (max-width: 1024px) {
-
   .cv {
     grid-template-columns: 1.2fr 2fr;
   }
