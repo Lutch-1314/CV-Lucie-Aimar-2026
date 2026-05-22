@@ -13,51 +13,109 @@
 
   <body class="cv">
     <header class="cv-header">
-      <a href="../assets/images/portrait.jpg" target="_blank">
+      <a
+        href="../assets/images/portrait.jpg"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
           class="profile-picture"
           src="../assets/images/portrait.jpg"
-          alt="portrait de Lucie Aimar"
+          alt="Portrait de Lucie Aimar"
         />
       </a>
-      <address class="cv-address">
+      <div class="header-content">
         <h1>Lucie Aimar</h1>
         <h2>En formation Développeur Web et Web Mobile</h2>
-        <div class="mail">
-          <img src="../assets/images/email.png" alt="" aria-hidden="true" />
-          <a
-            href="mailto:janedoe@gmail.com"
-            aria-label="Envoyer un email à Lucie Aimar"
-            >lucie.aimar13@gmail.com</a
-          >
+
+        <div class="header-links">
+          <ul class="contact-list">
+            <li class="mail">
+              <img src="../assets/icons/email.png" alt="" aria-hidden="true" />
+              <a
+                href="mailto:lucie.aimar13@gmail.com"
+                aria-label="Envoyer un email à Lucie Aimar"
+                >lucie.aimar13@gmail.com</a
+              >
+            </li>
+            <li class="phone">
+              <img src="../assets/icons/phone.png" alt="" aria-hidden="true" />
+              <a href="tel:0606060606" aria-label="Téléphoner à Lucie Aimar"
+                >06 88 97 46 81</a
+              >
+            </li>
+            <li class="location">
+              <img src="../assets/icons/home.png" alt="" aria-hidden="true" />
+              <a
+                href="https://maps.app.goo.gl/pgrXz6GzJE83Pug97"
+                aria-label="Adresse de Lucie Aimar"
+                target="_blank"
+                rel="noopener noreferrer"
+                >14400 Bayeux</a
+              >
+            </li>
+          </ul>
+
+          <ul class="network-list">
+            <li class="linkedin-link">
+              <img
+                class="social-icon"
+                src="../assets/icons/linkedin-logo.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <a
+                href="https://www.linkedin.com/in/lucie-aimar-314379104/"
+                aria-label="Profil LinkedIn de Lucie Aimar"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li class="github-link">
+              <img
+                class="social-icon"
+                src="../assets/icons/github-logo.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <a
+                href="https://github.com/Lutch-1314"
+                aria-label="Profil GitHub de Lucie Aimar"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+            <li class="portfolio-link">
+              <img
+                class="social-icon"
+                src="../assets/icons/portfolio.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <a
+                href="#"
+                aria-label="Portfolio bientôt disponible"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Portfolio
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="address">
-          <img src="../assets/images/home.png" alt="" aria-hidden="true" />
-          <a
-            href="https://maps.app.goo.gl/pgrXz6GzJE83Pug97"
-            aria-label="Adresse de Lucie Aimar"
-            target="_blank"
-            >14400 Bayeux</a
-          >
-        </div>
-        <div class="phone">
-          <img src="../assets/images/phone.png" alt="" aria-hidden="true" />
-          <a href="tel:0606060606" aria-label="Téléphoner à Lucie Aimar"
-            >0688974681</a
-          >
-        </div>
-        <div class="car-info">
-          <img src="../assets/images/car.png" alt="" aria-hidden="true" />
-          <span>Permis B / Véhicule</span>
-        </div>
-      </address>
+      </div>
     </header>
 
     <aside class="cv-sidebar">
       <h2>Compétences</h2>
+
       <h3>Frontend</h3>
-      <div class="skills">
-        <div class="skill-item">
+      <ul class="skills">
+        <li class="skill-item">
           <span class="skill-name">Figma</span>
           <span class="skill-level">
             <i class="fa-solid fa-star"></i>
@@ -66,9 +124,9 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-regular fa-star"></i>
           </span>
-        </div>
-        <div class="skill-item">
-          <span class="skill-name">HTML</span>
+        </li>
+        <li class="skill-item">
+          <span class="skill-name">HTML5</span>
           <span class="skill-level">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -76,9 +134,9 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-regular fa-star"></i>
           </span>
-        </div>
-        <div class="skill-item">
-          <span class="skill-name">CSS</span>
+        </li>
+        <li class="skill-item">
+          <span class="skill-name">CSS3 / Sass</span>
           <span class="skill-level">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -86,34 +144,65 @@
             <i class="fa-solid fa-star-half-stroke"></i>
             <i class="fa-regular fa-star"></i>
           </span>
-        </div>
-        <div class="skill-item">
+        </li>
+        <li class="skill-item">
           <span class="skill-name">JavaScript</span>
           <span class="skill-level">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+        </li>
+        <li class="skill-item">
+          <span class="skill-name">React</span>
+          <span class="skill-level">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+        </li>
+        <li class="skill-item">
+          <span class="skill-name">Bootstrap</span>
+          <span class="skill-level">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
             <i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
           </span>
-        </div>
-      </div>
+        </li>
+        <li class="skill-item">Responsive Design / Mobile First</li>
+        <li class="skill-item">Accessibilité WCAG 2.1</li>
+      </ul>
+
+      <h3>Backend</h3>
+      <ul class="skills">
+        <li class="skill-item">Node.js</li>
+        <li class="skill-item">Express</li>
+        <li class="skill-item">MySQL</li>
+        <li class="skill-item">Sequelize</li>
+        <li class="skill-item">API REST sécurisée</li>
+      </ul>
 
       <h2>Langues</h2>
-      <div class="languages">
-        <div class="language-item">
+      <ul class="languages">
+        <li class="language-item">
           <span class="language-name">Français</span>
           <span class="language-level">Langue maternelle</span>
-        </div>
-        <div class="language-item">
+        </li>
+        <li class="language-item">
           <span class="language-name">Anglais</span>
           <span class="language-level">Courant - Niveau B2.2</span>
-        </div>
-        <div class="language-item">
+        </li>
+        <li class="language-item">
           <span class="language-name">Allemand, Italien, Arabe</span>
           <span class="language-level">Notions</span>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <h2>Qualités</h2>
       <ul class="qualities-list">
@@ -187,37 +276,9 @@
     </main>
 
     <footer class="cv-footer">
-      <div class="social-links">
-        <a
-          href="https://www.linkedin.com/in/lucie-aimar-314379104/"
-          aria-label="Profil LinkedIn de Lucie Aimar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            class="social-icon"
-            src="../assets/images/linkedin-logo.png"
-            alt=""
-            aria-hidden="true"
-          />
-        </a>
-        <a
-          href="https://github.com/Lutch-1314"
-          aria-label="Profil GitHub de Lucie Aimar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            class="social-icon"
-            src="../assets/images/github-logo.png"
-            alt=""
-            aria-hidden="true"
-          />
-        </a>
-      </div>
       <div class="footer-meta">
         <span class="cv-date"
-          >Mis à jour le : <time datetime="2026-04-14">14/04/2026</time></span
+          >Mis à jour le : <time datetime="2026-05-22">22/05/2026</time></span
         >
       </div>
     </footer>
